@@ -6,11 +6,11 @@
 }
 
 body{
-    height: 100vh;
+    height: inherit;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 50% 30%;
-    grid-template-rows: 40px repeat(3,15%) 1fr;
+    grid-template-rows: 40px repeat(3,1fr) 1fr;
 }
 
 nav{
@@ -20,6 +20,7 @@ nav{
     grid-column: 1 / 4;
     grid-row: 1 / 2;
     background-color: black;
+    position: fixed;
 }
 
 nav a{
@@ -68,6 +69,8 @@ nav ul{
     grid-column: 1 / 2;
     grid-row: 2 / 7;
     font-size: 20px;
+    /*width: 20%;*/
+
 }
 
 .side-nav{
@@ -95,6 +98,7 @@ nav ul{
     padding: 0;
     margin: 0;
     width: 100%;
+    position: fixed;
 
 }
 
@@ -127,19 +131,23 @@ main{
     padding-bottom: 10px;
     color: #409388;
 }
-/*footer{*/
-/*    grid-column: 2 / 4;*/
-/*    grid-row: 6 / 7;*/
-/*    background-color: aqua;*/
-/*}*/
 
-/*.block-number{*/
-/*    grid-column: 2 / 3;*/
-/*    grid-row: 4 / 5;*/
-/*    background-color: lightpink;*/
-/*    display: flex;*/
-/*}*/
+.heading1{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
 
+.heading2{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.heading3{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+/*beginning adver*/
 .adver {
     grid-column: 3 / 4;
     grid-row: 2 / 6;
@@ -217,4 +225,69 @@ main{
 
 .ad-box-2 p, .ad-box-4 p, .ad-box-6 p {
     padding: 50px 0;
+}
+/*beginning of block-number*/
+.block-number{
+    grid-column: 1 / 4;
+    grid-row: 5 / 6;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.block-number li{
+    display: block;
+}
+
+.block-number a{
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.block-number a:hover{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+.page-number1{
+    background-color: black;
+}
+
+.page-number1 a{
+    color: white;
+}
+
+footer{
+    grid-column: 2 / 4;
+    grid-row: 6 / 7;
+}
+
+.footer-items1{
+    background-color: #666666;
+}
+
+.footer-items2{
+    background-color: #333333;
+}
+
+.footer-items1 h3{
+    padding: 20px 5px;
+    font-size: 15px;
+    color: white;
+    font-weight: normal;
+}
+
+.footer-items2 h5{
+    padding: 10px 5px;
+    color: white;
+}
+
+.footer-items2 a{
+    color: white;
 }
