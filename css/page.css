@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
@@ -21,58 +22,185 @@ nav{
     background-color: black;
 }
 
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+nav li:hover{
+    background-color: lightgray;
+
+}
+
 nav ul{
     display: flex;
+    align-items: center;
+    height: inherit;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
 }
 
-aside{
+.nav-item{
+    display: inline-block;
+    padding: 10px;
+}
+
+.nav-item:hover{
+    background-color: lightgray;
+}
+
+.logo{
+    height: inherit;
+    display: inline-block;
+    padding: 10px;
+    background-color: #343536;
+}
+
+.logo:hover{
+    background-color: lightgray;
+}
+/*SIDEBAR BEGINNING*/
+.side-bar{
+    background-color: lightgray;
     grid-column: 1 / 2;
     grid-row: 2 / 7;
-    background-color: grey;
+    font-size: 20px;
 }
 
-main{
-    grid-column: 2 / 3;
-    grid-row: 2 / 6;
-    background-color: green;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
+.side-nav{
+    padding: 5px 5px 5px 10px;
+
 }
 
-footer{
-    grid-column: 2 / 4;
-    grid-row: 6 / 7;
-    background-color: aqua;
+.menu{
+    padding: 15px 15px 15px 10px;
+    font-weight: bold;
 }
 
-.adver {
-    grid-column: 3 / 4;
-    grid-row: 2 / 6;
-    background-color: red;
+.side-bar a{
+    text-decoration: none;
+    color: black;
+    display: block;
 }
 
-.heading1 {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    background-color: lightcoral;
-}
 
-.heading2 {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    background-color: lightgreen;
-}
-
-.heading3 {
-    grid-column: 2 / 3;
-    grid-row: 3 / 4;
-    background-color: lightsalmon;
-}
-
-.block-number{
-    grid-column: 2 / 3;
-    grid-row: 4 / 5;
-    background-color: lightpink;
+.side-bar ul{
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+
 }
+
+.side-bar li{
+    width: 100%;
+}
+
+.side-bar a:hover{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+/*aside{*/
+/*    grid-column: 1 / 2;*/
+/*    grid-row: 2 / 7;*/
+/*    background-color: grey;*/
+/*}*/
+
+/*main{*/
+/*    grid-column: 2 / 3;*/
+/*    grid-row: 2 / 6;*/
+/*    background-color: green;*/
+/*    display: grid;*/
+/*    grid-template-columns: 1fr;*/
+/*    grid-template-rows: repeat(4, 1fr);*/
+/*}*/
+
+/*footer{*/
+/*    grid-column: 2 / 4;*/
+/*    grid-row: 6 / 7;*/
+/*    background-color: aqua;*/
+/*}*/
+
+/*.heading1 {*/
+/*    grid-column: 2 / 3;*/
+/*    grid-row: 1 / 2;*/
+/*    background-color: lightcoral;*/
+/*}*/
+
+/*.heading2 {*/
+/*    grid-column: 2 / 3;*/
+/*    grid-row: 2 / 3;*/
+/*    background-color: lightgreen;*/
+/*}*/
+
+/*.heading3 {*/
+/*    grid-column: 2 / 3;*/
+/*    grid-row: 3 / 4;*/
+/*    background-color: lightsalmon;*/
+/*}*/
+
+/*.block-number{*/
+/*    grid-column: 2 / 3;*/
+/*    grid-row: 4 / 5;*/
+/*    background-color: lightpink;*/
+/*    display: flex;*/
+/*}*/
+
+/*.adver {*/
+/*    grid-column: 3 / 4;*/
+/*    grid-row: 2 / 6;*/
+/*    background-color: red;*/
+/*    display: grid;*/
+/*    grid-template-columns: 1fr;*/
+/*    grid-template-rows: 1fr 2fr 1fr 2fr 1fr 2fr;*/
+/*    grid-gap: .25em;*/
+/*}*/
+
+/*.ad-items{*/
+/*    border: 5px solid pink;*/
+/*}*/
+
+/*.ad-item1{*/
+/*    grid-column: 1 / 2;*/
+/*    grid-row: 1 / 2;*/
+/*    background-color: yellow;*/
+/*}*/
+
+/*.ad-item2{*/
+/*    grid-row: 2 / 4;*/
+/*    grid-column: 1 / 2;*/
+/*    background-color: blue;*/
+/*}*/
+
+/*.ad-item3{*/
+/*    grid-column: 1 / 2;*/
+/*    grid-row: 3 / 4;*/
+/*    background-color: lime;*/
+/*}*/
+
+/*.ad-item4{*/
+/*    grid-column: 1 / 2;*/
+/*    grid-row: 4 / 5;*/
+/*    background-color: purple;*/
+/*}*/
+
+/*.ad-item5{*/
+/*    grid-column: 1 / 2;*/
+/*    grid-row: 5 / 6;*/
+/*    background-color: mediumvioletred;*/
+/*}*/
+
+/*.ad-item6{*/
+/*    grid-column: 1 / 2;*/
+/*    grid-row: 6 / 7;*/
+/*    background-color: crimson;*/
+/*}*/
